@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zak-pos-web
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ZAK_ADMIN_SECRET
+        generateValue: true
